@@ -11,7 +11,7 @@ Note: Zoom server-to-server tokens are scoped during the app creation workflow. 
 1. **Create a server-to-server OAuth app** Before cloning, set up your app and collect your credentials. For questions on this, reference the docs on creating a server-to-server app. Make sure you activate the app. Follow our [set up documentation](https://marketplace.zoom.us/docs/guides/build/server-to-server-oauth-app/) or[ this video](https://www.youtube.com/watch?v=OkBE7CHVzho) for a more complete walk through.
 2. **Add scopes to your app.** In your app's Scopes tab, add the following scopes: `meeting:write:admin`, `recording:write:admin`, `report:read:admin`, `user:write:admin`, `webinar:write:admin` . _Note: If you add additional API routes to this starter, you may need to add the corresponding scopes._
 3. **Install and run [Docker Desktop](https://www.docker.com/products/docker-desktop/).**
-4. **Clone this repo** -- `git clone git@github.com:zoom/s2s-oauth-starter.git`.
+4. **Clone this repo** -- `git clone git@github.com:zoom/server-to-server-oauth-starter-api.git`.
 5. **Add environment variables**. Add a **.env** file to the top level of the repository -- `touch .env`. Fill in the following values from your app. The project includes an example in .env.example
 
 ```
