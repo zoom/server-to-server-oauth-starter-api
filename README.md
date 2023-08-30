@@ -8,7 +8,7 @@ Note: Zoom server-to-server tokens are scoped during the app creation workflow. 
 
 ## Getting started
 
-1. **Create a server-to-server OAuth app** Before cloning, set up your app and collect your credentials. For questions on this, reference the docs on creating a server-to-server app. Make sure you activate the app. Follow our [set up documentation](https://marketplace.zoom.us/docs/guides/build/server-to-server-oauth-app/) or[ this video](https://www.youtube.com/watch?v=OkBE7CHVzho) for a more complete walk through.
+1. **Create a server-to-server OAuth app** Before cloning, set up your app and collect your credentials. For questions on this, reference the docs on creating a server-to-server app. Make sure you activate the app. Follow our [set up documentation](https://developers.zoom.us/docs/internal-apps/) or[ this video](https://www.youtube.com/watch?v=OkBE7CHVzho) for a more complete walk through.
 2. **Add scopes to your app.** In your app's Scopes tab, add the following scopes: `meeting:write:admin`, `recording:write:admin`, `report:read:admin`, `user:write:admin`, `webinar:write:admin` . _Note: If you add additional API routes to this starter, you may need to add the corresponding scopes._
 3. **Install and run [Docker Desktop](https://www.docker.com/products/docker-desktop/).**
 4. **Clone this repo** -- `git clone git@github.com:zoom/server-to-server-oauth-starter-api.git`.
@@ -123,7 +123,7 @@ For help using this app or any of Zoom's APIs, head to our [Developer Forum](htt
 
 ### Documentation
 
-- [API Reference](https://marketplace.zoom.us/docs/api-reference/introduction/)
-- [Build a Server-to-Server OAuth App](https://marketplace.zoom.us/docs/guides/build/server-to-server-oauth-app/)
+- [API Reference](https://developers.zoom.us/docs/api/)
+- [Create a Server-to-Server OAuth App](https://developers.zoom.us/docs/internal-apps/create/)
 - [How to create and use a Server to Server OAuth App (Video)](https://www.youtube.com/watch?v=OkBE7CHVzho)
-- [OAuth docs](https://marketplace.zoom.us/docs/guides/auth/oauth/)
+- [Server-to-Server OAuth](https://developers.zoom.us/docs/internal-apps/s2s-oauth/)
