@@ -9,7 +9,7 @@ const router = express.Router();
 
 /**
  * List users
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/users
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/users
  */
 router.get('/', async (req, res) => {
   const { headerConfig } = req;
@@ -25,7 +25,7 @@ router.get('/', async (req, res) => {
 
 /**
  * Create users
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/userCreate
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/userCreate
  */
 router.post('/add', async (req, res) => {
   const { headerConfig, body } = req;
@@ -40,7 +40,7 @@ router.post('/add', async (req, res) => {
 
 /**
  * Get a user
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/user
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/user
  */
 router.get('/:userId', async (req, res) => {
   const { headerConfig, params, query } = req;
@@ -57,7 +57,7 @@ router.get('/:userId', async (req, res) => {
 
 /**
  * Get user settings
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/userSettings
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/userSettings
  */
 router.get('/:userId/settings', async (req, res) => {
   const { headerConfig, params } = req;
@@ -73,7 +73,7 @@ router.get('/:userId/settings', async (req, res) => {
 
 /**
  * Update user settings
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/userSettingsUpdate
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/userSettingsUpdate
  */
 router.patch('/:userId/settings', async (req, res) => {
   const { headerConfig, params, body } = req;
@@ -89,7 +89,7 @@ router.patch('/:userId/settings', async (req, res) => {
 
 /**
  * Update a user
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/userUpdate
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/userUpdate
  */
 router.patch('/:userId', async (req, res) => {
   const { headerConfig, params, body } = req;
@@ -105,7 +105,7 @@ router.patch('/:userId', async (req, res) => {
 
 /**
  * Delete a user
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/userDelete
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/userDelete
  */
 router.delete('/:userId', async (req, res) => {
   const { headerConfig, params, query } = req;
@@ -122,7 +122,7 @@ router.delete('/:userId', async (req, res) => {
 
 /**
  * List meetings
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/meetings
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/meetings
  */
 router.get('/:userId/meetings', async (req, res) => {
   const { headerConfig, params, query } = req;
@@ -139,7 +139,7 @@ router.get('/:userId/meetings', async (req, res) => {
 
 /**
  * List webinars
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/webinars
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/webinars
  */
 router.get('/:userId/webinars', async (req, res) => {
   const { headerConfig, params, query } = req;
@@ -156,7 +156,7 @@ router.get('/:userId/webinars', async (req, res) => {
 
 /**
  * List all recordings
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/recordingsList
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/recordingsList
  */
 router.get('/:userId/recordings', async (req, res) => {
   const { headerConfig, params, query } = req;
