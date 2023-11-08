@@ -9,7 +9,7 @@ const router = express.Router();
 
 /**
  * Get a webinar
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/webinar
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/webinar
  */
 router.get('/:webinarId', async (req, res) => {
   const { headerConfig, params } = req;
@@ -25,7 +25,7 @@ router.get('/:webinarId', async (req, res) => {
 
 /**
  * Create a webinar
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/webinarCreate
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/webinarCreate
  */
 router.post('/:userId', async (req, res) => {
   const { headerConfig, body, params } = req;
@@ -41,7 +41,7 @@ router.post('/:userId', async (req, res) => {
 
 /**
  * Delete a webinar
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/webinarDelete
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/webinarDelete
  */
 router.delete('/:webinarId', async (req, res) => {
   const { headerConfig, params } = req;
@@ -57,7 +57,7 @@ router.delete('/:webinarId', async (req, res) => {
 
 /**
  * Update a webinar
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/webinarUpdate
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/webinarUpdate
  */
 router.patch('/:webinarId', async (req, res) => {
   const { headerConfig, params, body } = req;
@@ -73,7 +73,7 @@ router.patch('/:webinarId', async (req, res) => {
 
 /**
  * List webinar registrants
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/webinarRegistrants
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/webinarRegistrants
  */
 router.get('/:webinarId/registrants', async (req, res) => {
   const { headerConfig, params, query } = req;
@@ -93,7 +93,7 @@ router.get('/:webinarId/registrants', async (req, res) => {
 
 /**
  * Update registrant's status
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/webinarRegistrantStatus
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/webinarRegistrantStatus
  */
 router.put('/:webinarId/registrants/status', async (req, res) => {
   const { headerConfig, params, body } = req;
@@ -109,7 +109,7 @@ router.put('/:webinarId/registrants/status', async (req, res) => {
 
 /**
  * Get webinar participant reports
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/reportWebinarParticipants
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/reportWebinarParticipants
  */
 router.get('/:webinarId/report/participants', async (req, res) => {
   const { headerConfig, params, query } = req;
@@ -128,7 +128,7 @@ router.get('/:webinarId/report/participants', async (req, res) => {
 
 /**
  * Add a webinar registrant
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/webinarRegistrantCreate
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/webinarRegistrantCreate
  */
 router.post('/:webinarId/registrants', async (req, res) => {
   const { headerConfig, params, body } = req;
