@@ -9,7 +9,7 @@ const router = express.Router();
 
 /**
  * Get a meeting
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/meeting
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/meeting
  */
 router.get('/:meetingId', async (req, res) => {
   const { headerConfig, params } = req;
@@ -25,7 +25,7 @@ router.get('/:meetingId', async (req, res) => {
 
 /**
  * Create a meeting
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/meetingCreate
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/meetingCreate
  */
 router.post('/:userId', async (req, res) => {
   const { headerConfig, params, body } = req;
@@ -41,7 +41,7 @@ router.post('/:userId', async (req, res) => {
 
 /**
  * Update a meeting
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/meetingUpdate
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/meetingUpdate
  */
 router.patch('/:meetingId', async (req, res) => {
   const { headerConfig, params, body } = req;
@@ -57,7 +57,7 @@ router.patch('/:meetingId', async (req, res) => {
 
 /**
  * Delete a meeting
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/meetingDelete
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/meetingDelete
  */
 router.delete('/:meetingId', async (req, res) => {
   const { headerConfig, params } = req;
@@ -73,7 +73,7 @@ router.delete('/:meetingId', async (req, res) => {
 
 /**
  * Get meeting participant reports
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/reportMeetingParticipants
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/reportMeetingParticipants
  */
 router.get('/:meetingId/report/participants', async (req, res) => {
   const { headerConfig, params, query } = req;
@@ -92,7 +92,7 @@ router.get('/:meetingId/report/participants', async (req, res) => {
 
 /**
  * Delete meeting recordings
- * https://marketplace.zoom.us/docs/api-reference/zoom-api/methods/#operation/recordingDelete
+ * https://developers.zoom.us/docs/api/rest/reference/zoom-api/methods/#operation/recordingDelete
  */
 router.delete('/:meetingId/recordings', async (req, res) => {
   const { headerConfig, params, query } = req;
